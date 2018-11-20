@@ -15,17 +15,14 @@ class FizzBuzz
       arr = []
         for i in 1..100
           if i%3==0
-            arr.push('Fizz')
-          elsif i%5==0
-            arr.push('Buzz')
-          elsif i%15==0
-            arr.push('FizzBuzz')
-          else
             arr.push(i)
-          end
+          elsif i%5==0
+            arr.push(i)
+          elsif i%15==0
+            arr.push(i)
+          else
+        end
      end
     arr
   end
 end
-test = FizzBuzz.new
-puts test.fizzbuzzseq
